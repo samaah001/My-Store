@@ -1,0 +1,15 @@
+<a [routerLink]="['taa']" >
+  GO TO Expirement C
+</a> 
+<div *ngFor="let product of product">
+   <h3>
+    <a [title]="product.name + 'details'">
+  {{product.name}}
+  </a>
+  </h3>
+  <p *ngIf="product.description">
+    {{product.description}}
+  </p>
+  </div>
+  <br>
+<br>
